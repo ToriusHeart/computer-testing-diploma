@@ -1,0 +1,18 @@
+<div class="auth-action-container">
+    <div class="auth-action-container-title">
+        <h1>Вход в систему</h1>
+    </div>
+    <div class="auth-action-container-body">
+        <div>
+            <input type="text" placeholder="Имя пользователя" [formControl]="username" />
+        </div>
+        <div>
+            <input type="password" placeholder="Пароль" [formControl]="password" />
+        </div>
+        <div class="submit-button-container">
+            <button class="submit-button" (click)="login()">Войти</button>
+        </div>
+
+        <div class="link-to-register">Нет аккаунта? <a [routerLink]="['/auth/register']">Зарегистрируйтесь сейчас</a></div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+.btn-primary {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: 40px;
+}
+.btn-danger {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-size: 40px;
+}

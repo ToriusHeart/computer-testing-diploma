@@ -1,0 +1,27 @@
+<div *ngIf="tests.length > 0;else no_content" class="quizzes-container">
+    <div class="quiz-title">
+        <h2>All Tests</h2>
+    </div>
+    <div *ngFor="let test of tests" class="quiz-item">
+        <div>
+            <div>
+                <h2>{{test.name}}</h2>
+            </div>
+            <div>
+                <p>{{test.desc}}</p>
+            </div>
+            <div class="actions">
+                <span>{{test.questions_count}} Questions</span>
+                <a [routerLink]="['/tests', test.slug]">
+                    <button class="start-quiz-button">Start</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #no_content>
+    <div class="quizzes-container">
+        <h2>No Tests Available</h2>
+        <p>You are free to go, what are you doing here</p>
+    </div>
+</ng-template>

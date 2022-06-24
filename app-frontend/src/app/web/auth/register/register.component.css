@@ -1,0 +1,54 @@
+.auth-action-container {
+    width: 360px;
+    height: 560px;
+    padding: 15px 15px;
+    background-color: #358FCC;
+    border-radius: 5px;
+}
+.auth-action-container .auth-action-container-title {
+    color: white;
+    text-align: center;
+    background: linear-gradient(#0068B1, #0068B5);
+    padding: 8px 5px;
+}
+.auth-action-container .auth-action-container-body {
+    margin-top: 35px;
+}
+.auth-action-container .auth-action-container-body div {
+    margin-top: 10px;
+}
+.auth-action-container .auth-action-container-body div input {
+    border-radius: 3px;
+    padding: 8px 5px;
+    font-size: 1.1rem;
+    font-family: "Quicksand";
+    width: -webkit-fill-available;
+    border: 1px solid #ddd;
+}
+.auth-action-container .auth-action-container-body div input:focus {
+    outline: none;
+}
+.auth-action-container .auth-action-container-body .link-to-register {
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+}
+.auth-action-container .auth-action-container-body .submit-button-container {
+    margin-top: 30px;
+}
+.auth-action-container .auth-action-container-body .submit-button-container button {
+    padding: 8px 5px;
+    font-family: "Quicksand";
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: linear-gradient(#0068B1, #0068B5);
+    width: -webkit-fill-available;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.auth-action-container .auth-action-container-body .submit-button-container button:hover {
+    opacity: 0.9;
+}

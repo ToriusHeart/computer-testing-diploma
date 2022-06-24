@@ -1,0 +1,28 @@
+.question-wrapper {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-wrapper .question-number {
+    color: #ccc;
+    margin-left: 15px;
+}
+.buttons {
+    text-align: center;
+}
+.buttons button {
+    background-color: #0068B1;
+    font-family: "Quicksand";
+    padding: 8px 15px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin: 20px 5px;
+    cursor: pointer;
+}
+.buttons button:hover {
+    opacity: 0.85;
+}

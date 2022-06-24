@@ -1,0 +1,30 @@
+<div class="auth-action-container">
+    <div class="auth-action-container-title">
+        <h1>Регистрация</h1>
+    </div>
+    <div class="auth-action-container-body">
+        <div>
+            <input type="text" placeholder="Фамилия" [formControl]="last_name" />
+        </div>
+        <div>
+            <input type="text" placeholder="Имя" [formControl]="first_name" />
+        </div>
+        <div>
+            <input type="text" placeholder="Отчество" [formControl]="patronym" />
+        </div>
+        <div>
+            <input type="text" placeholder="Номер группы" [formControl]="group_number" />
+        </div>
+        <div>
+            <input type="text" placeholder="Имя пользователя" [formControl]="username" />
+        </div>
+        <div>
+            <input type="password" placeholder="Пароль" [formControl]="password" />
+        </div>
+        <div class="submit-button-container">
+            <button class="submit-button" (click)="register()">Зарегистрироваться</button>
+        </div>
+
+        <div class="link-to-register">Уже зарегистрированы? <a [routerLink]="['/auth/login']">Войти</a></div>
+    </div>
+</div>

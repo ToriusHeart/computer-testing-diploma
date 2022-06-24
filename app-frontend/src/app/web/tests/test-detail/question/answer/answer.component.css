@@ -1,0 +1,30 @@
+.answer {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.answer:hover {
+    background-color: #eee;
+}
+.answer div {
+    display: inline-block;
+}
+.answer .letter {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000;
+    border: 2px solid #eee;
+}
+.answer .selected-letter {
+    background-color: #0068B1;
+    color: #fff;
+    border-color: transparent;
+}

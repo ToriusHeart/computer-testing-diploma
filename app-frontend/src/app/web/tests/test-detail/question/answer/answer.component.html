@@ -1,0 +1,10 @@
+<div class="answer" [class.selected]="isSelected()" (click)="callParent(answer.id)">
+    <div class="letter" [class.selected-letter]="isSelected()">{{letter}}</div>
+    <div>{{answer.label}}</div>
+    <div *ngIf="answer.audio != null">
+        <audio controls>
+            <source src="{{answer.audio}}" type="audio/wav">
+            <p>Your browser doesn't support HTML5 audio. Here is a <a href="{{answer.audio}}">link to the audio</a> instead.</p>
+        </audio>
+    </div>
+</div>

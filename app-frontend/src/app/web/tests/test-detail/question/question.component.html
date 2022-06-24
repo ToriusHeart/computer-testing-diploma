@@ -1,0 +1,18 @@
+<div class="question-container">
+    {{question.description}}
+    <div *ngIf="question.audio != null">
+        <audio controls>
+            <source src="{{question.audio}}" type="audio/wav">
+            <p>Your browser doesn't support HTML5 audio. Here is a <a href="{{question.audio}}">link to the audio</a> instead.</p>
+        </audio>
+    </div>
+    <hr>
+    <div *ngIf="question.quesType != 'p';else recorder">
+        <div *ngFor="let answer of question['answer_set']; let i = index">
+            <app-answer [answer]="answer" [index]="i" (selectAnswer)="callParent($event)" [selectedAnswer]="selectedAnswer"></app-answer>
+        </div>
+    </div>
+    <ng-template #recorder>
+        <app-recorder></app-recorder>
+    </ng-template>
+</div>

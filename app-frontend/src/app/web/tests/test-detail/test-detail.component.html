@@ -1,0 +1,18 @@
+<div>
+    <div class="question-wrapper">
+        <div *ngIf="test!=null" >
+            <div class="question-number">
+                QUESTION  {{currentIndex + 1}} OF {{test.question_set.length}}
+            </div>
+            <app-question [selectedAnswer]="answers[currentIndex]" [question]="test['question_set'][currentIndex]" (selectAnswer)="selectAnswer($event)"></app-question>
+        </div>
+    </div>
+    
+    <div class="buttons" *ngIf="test!=null">
+        <button (click)="previous()">
+            Previous
+        </button>
+        <button  (click)="next()" [innerHtml]="currentIndex == test.question_set.length - 1 ? 'Submit' : 'Next'">
+        </button>
+    </div>
+</div>
